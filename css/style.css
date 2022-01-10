@@ -3,7 +3,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #910e0e;
   }
   
   nav ul li {
@@ -57,8 +57,11 @@ nav ul {
   
   .work{
       padding: 8px;
-      border: 1px solid;
-      border-radius: 12px;
+      border: 2px solid #910e0e;;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 6px;
       text-align: center;
   }
   .services-provider{
@@ -88,7 +91,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #1c87c9;
+ 
     }
     form {
     padding: 25px;
@@ -148,3 +151,9 @@ nav ul {
     margin-top: 2%;
     margin-left: 28%;
     }
+    footer {
+        text-align: center;
+        padding: 3px;
+        background-color: antiquewhite;
+        
+      }
