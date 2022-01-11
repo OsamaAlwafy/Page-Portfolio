@@ -1,5 +1,8 @@
 body{
   background-color: #edede7;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 nav{
@@ -48,6 +51,14 @@ width: 80%;
   height: 100%;
   border-radius: 15px
 }
+.about-info p{
+  font-size: 3vw;
+  text-align: justify;
+}
+.skil-langauge {
+  
+  font-size: 3vw;
+}
 .progressbar {
   background-color: black;
   border-radius: 13px;
@@ -83,11 +94,19 @@ width: 80%;
   
   padding: 10px;
 }
+.experience-item ul li label
+{
+  font-size: 3vw;
+  display: block;
+}
 .experience h2{
   text-align: center;
 }
 #Services{
   text-align: center;
+}
+.services p{
+  font-size: 3vw;
 }
 .work{
   padding: 8px;
@@ -98,6 +117,9 @@ width: 80%;
   border-bottom-left-radius: 6px;
   text-align: center;
   margin-bottom: 5px;
+}
+.work p{
+  font-size: 3vw;
 }
 form {
   padding: 5px;
@@ -157,7 +179,8 @@ form {
     }
     nav{
       margin: auto;
-      width: 80%;
+      width:  88%;
+      margin-bottom: 10px;
     }
     
     nav ul li {
@@ -185,11 +208,17 @@ form {
       width: 80%;
       height: 100%;
       border-radius: 15px;
+      position: relative;
+    top: 55px;
     }
     .about-info{
       width: 65%;
       float: right;
       margin-top: auto;
+    }
+    .about-info p{
+      font-size: 1.5vw;
+      text-align: justify;
     }
     .home-section
      {
@@ -200,9 +229,10 @@ form {
      }
      .skill,.experience{
         padding: 10px;
-        
+        text-align: left;
         width: 50%;
-        margin: auto;
+        margin: 1px;
+     
     }
     .skil-item,.experience-item{
         border-left: 3px solid red; 
@@ -213,6 +243,11 @@ form {
         
         padding: 10px;
     }
+    .experience-item ul li label
+{
+  font-size: 1.5vw;
+  display: block;
+}
     .prevous-work{
         display: flex;
         margin-top: 5px;
@@ -221,7 +256,9 @@ form {
          gap: 10px;
        
     }
-    
+    .experience h2{
+      text-align: left;
+    }
     .work{
         padding: 8px;
         border: 2px solid #910e0e;;
@@ -231,6 +268,9 @@ form {
         border-bottom-left-radius: 6px;
         text-align: center;
     }
+    .work p{
+      font-size: 1.5vw;
+    }
     .services-provider{
         display: flex;
         gap:15px;
@@ -239,11 +279,15 @@ form {
     }
     .services{
         text-align: center;
+        
       
         padding: 15px;
     }
     #Services h2{
         text-align: center;
+    }
+    .services p{
+      font-size: 1.5vw;
     }
     .social-media{
     display: flex;
@@ -262,10 +306,11 @@ form {
       
    
       }
+
       #Services
       {
         padding: 10px;
-        margin-top: 10px;
+        margin-top: 22px;
       }
       .services-provider
       {
@@ -348,18 +393,17 @@ form {
           
         }
     .skil-langauge{
-          
+        font-size: 1.5vw;
         }
         .progressbar {
-          background-color: black;
-          border-radius: 13px;
-          /* (height of inner div) / 2 + padding */
-          width: 64%;
-          padding: 3px;
+          margin: 1px;
+        text-align: left;
+        width: 64%;
+        padding: 3px;
         }
         
         .progressbar>div {
-          background-color: orange;
+          background-color: #8670ab;
           width: 78%;
           
           /* Adjust with JavaScript */
