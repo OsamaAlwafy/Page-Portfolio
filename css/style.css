@@ -1,159 +1,371 @@
+body{
+  background-color: #edede7;
+}
+
+nav{
+margin: auto;
+width: 100%;
+text-align: center;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #910e0e;
-  }
-  
-  nav ul li {
-    float: left;
-  }
-  
-  nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  nav ul li a:hover { 
-    background-color: #111;
-  }
-  figure img{
-      width: 100%;
-  }
-  .home-section
-   {
-     text-align: center; 
-     width: 80%;
-     margin: auto;
-   }
-   .skill,.experience{
-      padding: 10px;
-      
-      width: 50%;
-      margin: auto;
-  }
-  .skil-item,.experience-item{
-      border-left: 3px solid red; 
-  }
-  .skil-item ul li ,.experience-item ul li 
-  {
-      background-color: antiquewhite;
-      
-      padding: 10px;
-  }
-  .prevous-work{
-      display: flex;
-      margin-top: 5px;
-      margin-bottom: 8px;;
-   
-       gap: 10px;
-     
-  }
-  
-  .work{
-      padding: 8px;
-      border: 2px solid #910e0e;;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 6px;
-      border-bottom-right-radius: 25px;
-      border-bottom-left-radius: 6px;
-      text-align: center;
-  }
-  .services-provider{
-      display: flex;
-      gap:15px;
-      justify-content:center
-  
-  }
-  .services{
-      text-align: center;
-  }
-  #Services h2{
-      text-align: center;
-  }
-  .social-media{
-  display: flex;
-      text-align: center;
-      justify-content: center;
-  }
-  .social-media div {
-      margin-right: 10px;
-      padding: 10px;
-  }
-  .main-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
  
-    }
-    form {
-    padding: 25px;
-    margin: 25px;
-    box-shadow: 0 2px 5px #f5f5f5; 
-    background: #f5f5f5; 
-    }
-    .fas {
-    margin: 25px 10px 0;
-    font-size: 72px;
-    color: #fff;
-    }
-    .fa-envelope {
-    transform: rotate(-20deg);
-    }
-    .fa-at , .fa-mail-bulk{
-    transform: rotate(10deg);
-    }
-    input, textarea {
-    width: calc(100% - 18px);
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #1c87c9;
-    outline: none;
-    }
-    input::placeholder {
-    color: #666;
-    }
-    button {
+}
+nav ul li {
+
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(8, 6, 6);
+  margin: auto;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav ul li a:hover { 
+  background-color: #111;
+  color: white;
+}
+/*
+width: 80%;
+  height: 32vh;
+  text-align: center;
+  border-radius: 30px;
+  margin: auto;
+  */
+  .home-section
+ {
+   text-align: center; 
+   width: 80%;
+   margin: auto;
+ }
+ figure img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px
+}
+.progressbar {
+  background-color: black;
+  border-radius: 13px;
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  padding: 3px;
+}
+
+.progressbar>div {
+  background-color: #8670ab;;
+  width: 78%;
+  
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
+.skill{
     width: 100%;
-    padding: 10px;
-    border: none;
-    background: #1c87c9; 
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
+    text-align: center;
+}
+.experience{
+  padding: 10px;
+  width: 74%;
+  margin: auto;
+}
+.experience-item{
+  border-left: 3px solid red; 
+}
+.experience-item ul li 
+{
+  background-color: antiquewhite;
+  
+  padding: 10px;
+}
+.experience h2{
+  text-align: center;
+}
+#Services{
+  text-align: center;
+}
+.work{
+  padding: 8px;
+  border: 2px solid #910e0e;;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 6px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+form {
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 2px 5px #121111; 
+ 
+  }
+  input, textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #1c87c9;
+      outline: none;
+      }
+  input::placeholder {
+      color: #666;
+  }
+  button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #1c87c9; 
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button:hover {
+      background: #2371a0;
+      }
+      footer {
+          text-align: center;
+          padding: 3px;
+          background-color: antiquewhite;
+          
+        }
+        .social-media{
+          display: flex;
+              text-align: center;
+              justify-content: center;
+          }
+          .social-media div {
+              margin-right: 10px;
+              padding: 10px;
+          }
+
+@media (min-width: 769px) {
+
+
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      width: 80%;
+      margin: auto;
+      background-color: #4c504a;
     }
-    button:hover {
-    background: #2371a0;
-    }    
-    @media (min-width: 568px) {
-    .main-block {
-    flex-direction: row;
+    nav{
+      margin: auto;
+      width: 80%;
     }
-    .left-part, form {
-    width: 50%;
+    
+    nav ul li {
+      float: right;
+      margin: auto;
     }
-    .fa-envelope {
-    margin-top: 0;
-    margin-left: 20%;
+    
+    nav ul li a {
+      display: inline-block;
+      color: white;
+      margin: auto;
+      padding: 14px 16px;
+      text-decoration: none;
     }
-    .fa-at {
-    margin-top: -10%;
-    margin-left: 65%;
+    
+    /* Change the link color to #111 (black) on hover */
+    nav ul li a:hover { 
+      background-color: #111;
     }
-    .fa-mail-bulk {
-    margin-top: 2%;
-    margin-left: 28%;
+    figure {
+        width: 20%;
+        float: right;
     }
-    footer {
-        text-align: center;
-        padding: 3px;
+    figure img{
+      width: 80%;
+      height: 100%;
+      border-radius: 15px;
+    }
+    .about-info{
+      width: 65%;
+      float: right;
+      margin-top: auto;
+    }
+    .home-section
+     {
+       text-align: center; 
+       width: 80%;
+       margin: auto;
+       box-sizing: border-box;
+     }
+     .skill,.experience{
+        padding: 10px;
+        
+        width: 50%;
+        margin: auto;
+    }
+    .skil-item,.experience-item{
+        border-left: 3px solid red; 
+    }
+    .skil-item ul li ,.experience-item ul li 
+    {
         background-color: antiquewhite;
         
+        padding: 10px;
+    }
+    .prevous-work{
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 8px;;
+     
+         gap: 10px;
+       
+    }
+    
+    .work{
+        padding: 8px;
+        border: 2px solid #910e0e;;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 6px;
+        text-align: center;
+    }
+    .services-provider{
+        display: flex;
+        gap:15px;
+        justify-content:center
+    
+    }
+    .services{
+        text-align: center;
+      
+        padding: 15px;
+    }
+    #Services h2{
+        text-align: center;
+    }
+    .social-media{
+    display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .social-media div {
+        margin-right: 10px;
+        padding: 10px;
+    }
+    .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     
+      
+   
       }
+      #Services
+      {
+        padding: 10px;
+        margin-top: 10px;
+      }
+      .services-provider
+      {
+        padding: 10px;
+      }
+      .previous-work
+      {
+        margin-top: 10px;
+      padding: 15px;
+      }
+      #about{
+        display: flex;
+        column-gap: 10px;
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+      }
+      form {
+      padding: 25px;
+      margin: 25px;
+      box-shadow: 0 2px 5px #f5f5f5; 
+     
+      }
+      .fas {
+      margin: 25px 10px 0;
+      font-size: 72px;
+      color: #fff;
+      }
+      .fa-envelope {
+      transform: rotate(-20deg);
+      }
+      .fa-at , .fa-mail-bulk{
+      transform: rotate(10deg);
+      }
+      input, textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #1c87c9;
+      outline: none;
+      }
+      input::placeholder {
+      color: #666;
+      }
+      button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #1c87c9; 
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button:hover {
+      background: #2371a0;
+      }    
+      @media (min-width: 568px) {
+      .main-block {
+      flex-direction: row;
+      }
+      .left-part, form {
+      width: 50%;
+      }
+      .fa-envelope {
+      margin-top: 0;
+      margin-left: 20%;
+      }
+      .fa-at {
+      margin-top: -10%;
+      margin-left: 65%;
+      }
+      .fa-mail-bulk {
+      margin-top: 2%;
+      margin-left: 28%;
+      }
+      footer {
+          text-align: center;
+          padding: 3px;
+          background-color: antiquewhite;
+          
+        }
+    .skil-langauge{
+          
+        }
+        .progressbar {
+          background-color: black;
+          border-radius: 13px;
+          /* (height of inner div) / 2 + padding */
+          width: 64%;
+          padding: 3px;
+        }
+        
+        .progressbar>div {
+          background-color: orange;
+          width: 78%;
+          
+          /* Adjust with JavaScript */
+          height: 20px;
+          border-radius: 10px;
+        }
+
+
+}
