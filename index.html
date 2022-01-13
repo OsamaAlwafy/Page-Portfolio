@@ -9,17 +9,30 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
      
     <link rel="stylesheet" href="css/style.css">
-  
+   
 </head>
 <body>
-    <nav>
-       <ul>
-           <li class="nav-larg"><a href ="#home">home </a></li>
-           <li class="nav-larg"><a href ="#about">about </a></li>
-           <li class="nav-larg"><a href ="#Services">Services </a></li>
-           <li class="nav-larg"><a href ="#Contact">Contact Us </a></li>
-       </ul>
-    </nav>
+  <nav class="menu" id="main-menu">
+    <button class="menu-toggle" onclick="" id="toggle-menu"> 
+    toggle menu
+    </button>
+    <div class="menu-dropdown"> 
+    <ul class="nav-menu" id="nav-menu">
+    <li><a href="#home">home</a></li>
+    <li><a href="#about">about</a></li>
+    <li><a href="#Services">Services</a></li>
+    <li ><a href="#Contact">Contact</a></li>
+
+    
+    </ul>
+    
+    </div>
+    
+   </nav>
+   <div class="wrap-swich" ><label class="switch">
+    <input id="toggleSwitch" type="checkbox">
+    <span class="slider"></span>
+  </label><br></div>
     <section class="home-section" id="home" >
         <figure>
             <img src="images/me3.jpg" alt="my images" width="100" height="100">
@@ -40,24 +53,31 @@
         
         <div class="skill">
             <h2>Skills</h2>
+            <div class="wrap-skill">
             <div class="skil-langauge">python</div>
             <div class="progressbar">
                 <div></div>
-              </div>
-
+            </div>
+            </div>
+            <div class="wrap-skill">
               <div class="skil-langauge">Java</div>
-            <div class="progressbar">
+              <div class="progressbar">
                 <div></div>
               </div>
+              </div>
+
+            <div class="wrap-skill"> 
 
               <div class="skil-langauge">C++</div>
             <div class="progressbar">
                 <div></div>
               </div>
-
+           </div>
+           <div class="wrap-skill">
               <div class="skil-langauge">Web developer</div>
               <div class="progressbar">
                   <div></div>
+                </div>
                 </div>
 
         </div>
@@ -83,22 +103,22 @@
        <section class="services-provider" >
        
            <div class="services"> 
-            <i class="fa fa-laptop-code" style="font-size:40px;color:red;"></i>
+            <i class="fa fa-laptop-code" style="font-size:100px;color:#8670ab;"></i>
             <p>responsive web site</p>
          </div>
            <div class="services"> 
-            <i class="fa fa-database" style="font-size:40px;color:red;"></i>
+            <i class="fa fa-database" style="font-size:100px;color:#8670ab;"></i>
             <p>analysis and design database</p>   
         
           </div>
            <div class="services"> 
 
-            <i class="fa fa-laptop" style="font-size:40px;color:red;"></i>
+            <i class="fa fa-laptop" style="font-size:100px;color:#8670ab;"></i>
             <p>desktop app</p>
 
            </div>
            <div class="services">
-            <i class="fa fa-mobile-alt" style="font-size:40px;color:red;"></i>
+            <i class="fa fa-mobile-alt" style="font-size:100px;color:#8670ab;"></i>
             <p>mobile app</p>
 
 
@@ -111,7 +131,7 @@
         <div class="prevous-work">
             
             <div class="work">
-                <div> <i class="fa fa-camera" style="font-size:40px;color:red;"></i></div>
+                <div> <img src="images/face.jpg" alt="face detection images"></div>
                 <h3>
                     face detection
                 </h3>
@@ -119,7 +139,7 @@
             </div>
 
             <div class="work">
-                <div> <i class="fa fa-money-check-alt" style="font-size:40px;color:red;"></i></div>
+                <div> <img src="images/face.jpg" alt="face detection images"></div>
                 <h3>
                     bank system
                 </h3>
@@ -127,7 +147,7 @@
             </div>
 
             <div class="work">
-                <div> <i class="fa fa-phone-laptop" style="font-size:40px;color:red;"></i></div>
+                <div> <img src="images/face.jpg" alt="face detection images"></div>
                 <h3>
                     Human rights website
                 </h3>
@@ -136,7 +156,7 @@
             
 
             <div class="work">
-                <div> <i class="fa fa-utensils-alt" style="font-size:40px;color:red;"></i></div>
+                <div><img src="images/face.jpg" alt="face detection images"></div>
                 <h3>
                     restaurant system
                 </h3>
@@ -154,16 +174,16 @@
       <div class="form-contact">
         <div class="main-block">
            
-            <form action="/">
+            <form>
               <h1>Contact Us</h1>
               <div class="info">
-                <input class="fname" type="text" name="name" placeholder="Full name">
-                <input type="text" name="name" placeholder="Email">
+                <input id="name" class="fname" type="text" name="name" placeholder="Full name">
+                <input type="text" id="email" name="name" placeholder="Email">
                 
               
-                <textarea rows="4" placeholder="Message"></textarea>
+                <textarea id="message" rows="4" placeholder="Message"></textarea>
               </div>
-              <button type="submit" href="/">Submit</button>
+              <input class="send-btn" value="send" type="button" onclick="validation();" >
             </form>
           </div>
       </div>
@@ -171,13 +191,18 @@
 
   <footer>
     <div class="social-media">
-        <div>  <i class="fab  fa-facebook-f" style="font-size:30px;color:red;"></i> </div>
-        <div>  <i class="	fab  fa-twitter" style="font-size:30px;color:red;"></i> </div>
-        <div>  <i class="fab  fa-google" style="font-size:30px;color:red;"></i></div>
+        <div>  <i class="fab  fa-facebook-f" style="font-size:30px;color:#8670ab;"></i> </div>
+        <div>  <i class="	fab  fa-twitter" style="font-size:30px;color:#8670ab;"></i> </div>
+        <div>  <i class="fab  fa-google" style="font-size:30px;color:#8670ab;"></i></div>
     </div>
     <p>Author: Osama Alwafy<br>
     
   </footer>
 
+
+  
+   
+
+<script src="js/home.js"></script>    
 </body>
 </html>

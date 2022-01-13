@@ -4,35 +4,165 @@ body{
   margin: 0;
   padding: 0;
 }
-
-nav{
-margin: auto;
-width: 100%;
-text-align: center;
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
- 
-}
-nav ul li {
-
-  text-align: center;
-}
-
-nav ul li a {
-  display: block;
-  color: rgb(8, 6, 6);
-  margin: auto;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-nav ul li a:hover { 
-  background-color: #111;
+.dark-mode {
+  background-color: black;
   color: white;
 }
+.valid-class{
+ border: 1px solid green; 
+}
+.invalid-class
+{
+  border: 1px solid red;
+  color: red;
+}
+
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em); 
+ }
+ *,
+*::before,
+*::after {
+ box-sizing: inherit;
+}
+.toggle-btn
+{
+  position:sticky;
+  left: 1px;
+  top:15px;
+  width: auto;
+
+}
+.wrap-swich{
+  position: fixed;
+  top: 8px;
+}
+body {
+ margin: 0;
+ font-family: Helvetica, Arial, sans-serif;
+}
+a:link {
+  
+  font-weight: bold;
+  text-decoration: none;
+ }
+
+ a:hover {
+  text-decoration: underline;
+ }
+ a:active {
+  color: #b81414;
+ }
+ .menu {
+  position: relative; 
+ }
+ .menu-toggle {
+  position: absolute;
+   color: #000; 
+  right: 0.1em;
+  border: 0; 
+  background-color: transparent;
+  font-size: 3em;
+  width: 1em;
+  height: 1em;
+  line-height: 0.4;
+  text-indent: 5em; 
+  white-space: nowrap;
+  overflow: hidden;
+ }
+ .menu-toggle::after {
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  display: block;
+  content: "\2261"; 
+  text-indent: 0;
+ }
+ .menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0;
+ }
+ .menu.is-open .menu-dropdown {
+  display: block; 
+ }
+ .nav-menu {
+  margin: 0;
+  padding-left: 0;
+  display: none;
+ 
+  list-style: none;
+
+ }
+
+ .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #8670ab;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.work img{
+  width: 100%;
+}
+
+input:checked+.slider {
+  background-color: #61666a;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #61666a;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+ .nav-menu > li + li { 
+  border-top: 1px solid #ccc;
+ }
+ .nav-menu > li > a {
+  display: block;
+  padding: 0.5em 1em;
+ 
+  
+ }
+ form h1{
+   text-align: center;
+ }
 /*
 width: 80%;
   height: 32vh;
@@ -46,6 +176,7 @@ width: 80%;
    width: 80%;
    margin: auto;
  }
+
  figure img{
   width: 100%;
   height: 100%;
@@ -53,14 +184,12 @@ width: 80%;
  
 }
 
+
 .about-info p{
   font-size: 3vw;
   text-align: justify;
 }
-.skil-langauge {
-  
-  font-size: 3vw;
-}
+
 .progressbar {
   background-color: black;
   border-radius: 13px;
@@ -71,7 +200,7 @@ width: 80%;
 }
 
 .progressbar>div {
-  background-color: #8670ab;;
+  background-color: #8670ab;
   width: 78%;
   
   /* Adjust with JavaScript */
@@ -88,11 +217,11 @@ width: 80%;
   margin: auto;
 }
 .experience-item{
-  border-left: 3px solid red; 
+  border-left: 3px solid #8670ab; 
 }
 .experience-item ul li 
 {
-  background-color: antiquewhite;
+  
   
   padding: 10px;
 }
@@ -112,13 +241,14 @@ width: 80%;
 }
 .work{
   padding: 8px;
-  border: 2px solid #910e0e;;
+   border: 1px solid #8670ab;
   border-top-left-radius: 25px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 6px;
   text-align: center;
   margin-bottom: 5px;
+  box-shadow: 0 2px 5px #f5f5f5; 
 }
 .work p{
   font-size: 3vw;
@@ -130,11 +260,12 @@ form {
  
   }
   input, textarea {
-      width: calc(100% - 18px);
-      padding: 8px;
-      margin-bottom: 20px;
-      border: 1px solid #1c87c9;
-      outline: none;
+    width: calc(100% - 18px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+    border-radius: 16px;
       }
   input::placeholder {
       color: #666;
@@ -154,7 +285,7 @@ form {
       footer {
           text-align: center;
           padding: 3px;
-          background-color: antiquewhite;
+          
           
         }
         .social-media{
@@ -166,45 +297,44 @@ form {
               margin-right: 10px;
               padding: 10px;
           }
-
+.send-btn{
+  padding: 10px;
+    border-radius: 10px;
+    background-color: #1c87c9;
+}
 @media (min-width: 769px) {
 
 
-  nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      width: 80%;
-      margin: auto;
-      background-color: #4c504a;
-    }
-    nav{
-      margin: auto;
-      width:  88%;
-      margin-bottom: 10px;
-    }
-    
-    nav ul li {
-      float: right;
-      margin: auto;
-    }
-    
-    nav ul li a {
-      display: inline-block;
-      color: white;
-      margin: auto;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
+ 
     /* Change the link color to #111 (black) on hover */
-    nav ul li a:hover { 
-      background-color: #111;
+ .toggle-btn
+{
+  position:absolute;
+  right: 1px;
+  top:15px;
+  width: auto;
+  
+}   
+  
+  .menu-toggle {
+    display: none; 
     }
-    figure {
-        width: 20%;
-        float: right;
+    .menu-dropdown {
+    display: block; 
+    position: static; 
+    }
+    .nav-menu {
+      margin: auto;
+      width: 50%;
+     display: block;
+      list-style: none;
+     
+      
+     }
+    .nav-menu li{
+      display: inline-block;
+      text-align: center;
+      margin: auto;
     }
     figure img{
       width: 80%;
@@ -212,6 +342,11 @@ form {
       border-radius: 15px;
       position: relative;
       top: 4px;
+    }
+    figure{
+      width: 24%;
+    float: right;
+    margin-top: 5px;
     }
     .about-info{
       width: 65%;
@@ -227,6 +362,7 @@ form {
        text-align: center; 
        width: 80%;
        margin: auto;
+       
        box-sizing: border-box;
      }
      .skill,.experience{
@@ -237,11 +373,11 @@ form {
      
     }
     .skil-item,.experience-item{
-        border-left: 3px solid red; 
+       
     }
     .skil-item ul li ,.experience-item ul li 
     {
-        background-color: antiquewhite;
+        
         
         padding: 10px;
     }
@@ -263,7 +399,7 @@ form {
     }
     .work{
         padding: 8px;
-        border: 2px solid #910e0e;;
+       
         border-top-left-radius: 25px;
         border-top-right-radius: 6px;
         border-bottom-right-radius: 25px;
@@ -278,6 +414,10 @@ form {
         gap:15px;
         justify-content:center
     
+    }
+    .wrap-skill{
+     display: flex;
+     margin-bottom: 10px;
     }
     .services{
         text-align: center;
@@ -334,24 +474,10 @@ form {
       box-shadow: 0 2px 5px #f5f5f5; 
      
       }
-      .fas {
-      margin: 25px 10px 0;
-      font-size: 72px;
-      color: #fff;
-      }
-      .fa-envelope {
-      transform: rotate(-20deg);
-      }
-      .fa-at , .fa-mail-bulk{
-      transform: rotate(10deg);
-      }
-      input, textarea {
-      width: calc(100% - 18px);
-      padding: 8px;
-      margin-bottom: 20px;
-      border: 1px solid #1c87c9;
-      outline: none;
-      }
+      
+     
+     
+     
       input::placeholder {
       color: #666;
       }
@@ -366,50 +492,6 @@ form {
       }
       button:hover {
       background: #2371a0;
-      }    
-      @media (min-width: 568px) {
-      .main-block {
-      flex-direction: row;
       }
-      .left-part, form {
-      width: 50%;
-      }
-      .fa-envelope {
-      margin-top: 0;
-      margin-left: 20%;
-      }
-      .fa-at {
-      margin-top: -10%;
-      margin-left: 65%;
-      }
-      .fa-mail-bulk {
-      margin-top: 2%;
-      margin-left: 28%;
-      }
-      footer {
-          text-align: center;
-          padding: 3px;
-          background-color: antiquewhite;
-          
-        }
-    .skil-langauge{
-        font-size: 1.5vw;
-        }
-        .progressbar {
-          margin: 1px;
-        text-align: left;
-        width: 64%;
-        padding: 3px;
-        }
-        
-        .progressbar>div {
-          background-color: #8670ab;
-          width: 78%;
-          
-          /* Adjust with JavaScript */
-          height: 20px;
-          border-radius: 10px;
-        }
-
-
-}
+    }    
+     
