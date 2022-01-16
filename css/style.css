@@ -79,21 +79,17 @@ a:link {
   content: "\2261"; 
   text-indent: 0;
  }
- .menu-dropdown {
+ #menu-dropdown {
   display: none;
-  position: absolute;
+ 
   right: 0;
   left: 0;
   margin: 0;
  }
- .menu.is-open .menu-dropdown {
-  display: block; 
- }
+
  .nav-menu {
   margin: 0;
   padding-left: 0;
-  display: none;
- 
   list-style: none;
 
  }
@@ -319,10 +315,13 @@ form {
   .menu-toggle {
     display: none; 
     }
-    .menu-dropdown {
-    display: block; 
+    #menu-dropdown {
+    display: block !important ;
+
     position: static; 
-    }
+    text-align: center;
+    margin: auto; 
+   }
     .nav-menu {
       margin: auto;
       width: 50%;

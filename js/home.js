@@ -3,7 +3,7 @@
     
     button.addEventListener('click', function(event) { 
     event.preventDefault();
-    var x = document.getElementById("nav-menu");
+    var x = document.getElementById("menu-dropdown");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
@@ -13,6 +13,21 @@
     });
    })();
    
+   var images=document.getElementsByClassName("image-work");
+   
+   
+   for(var i=0 ; i<images.length;i++)
+   {
+   images[i].addEventListener("mouseover",function(event) { 
+    this.style.opacity=0.4;
+});
+
+images[i].addEventListener("mouseout",function(event) { 
+  this.style.opacity=1;
+});
+
+
+   }
 
    document.getElementById("toggleSwitch").onclick = function() {
     myFunction()
@@ -81,7 +96,7 @@ function checkMessage(message)
      else
      {
       email.className += " invalid-class ";
-      name.value="Enter valid input ";
+      email.value="Enter valid input ";
      }
 
      if(checkMessage(message.value))
@@ -91,7 +106,7 @@ function checkMessage(message)
      else
      {
       message.className += " invalid-class ";
-      name.value="Enter valid input ";
+      message.value="Enter valid input ";
      }
      
 
