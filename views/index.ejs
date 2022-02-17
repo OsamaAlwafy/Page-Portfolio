@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Portfolio </title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+     
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+  <nav class="menu" id="main-menu">
+    <button class="menu-toggle" onclick="" id="toggle-menu"> 
+    toggle menu
+    </button>
+    
+    <ul class="nav-menu" id="menu-dropdown">
+    <li><a href="#home">home</a></li>
+    <li><a href="#about">about</a></li>
+    <li><a href="#Services">Services</a></li>
+    <li ><a href="#Contact">Contact</a></li>
+
+    
+    </ul>
+
+    
+   </nav>
+   <div class="wrap-swich" ><label class="switch">
+    <input id="toggleSwitch" type="checkbox">
+    <span class="slider"></span>
+  </label><br></div>
+    <section class="home-section" id="home" >
+        <figure>
+            <img src="me3.jpg" alt="my images" width="100" height="100">
+        </figure>
+        <div class="about-info">
+        <h1>I am Osama Alwawfy</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eveniet itaque 
+            praesentium illum eaque rerum omnis quae numquam voluptatibus ipsam sapiente, 
+            a et explicabo reiciendis animi dolorem, 
+            iusto deserunt doloribus! Osama Mahfouz Abdo, a graduate of Taiz University in 2021,
+             I am currently training at the Coding Academy  </p>
+        </div>    
+        
+
+
+    </section>
+    <section id="about">
+        
+        <div class="skill">
+            <h2>Skills</h2>
+            <div class="wrap-skill">
+            <div class="skil-langauge">python</div>
+            <div class="progressbar">
+                <div></div>
+            </div>
+            </div>
+            <div class="wrap-skill">
+              <div class="skil-langauge">Java</div>
+              <div class="progressbar">
+                <div></div>
+              </div>
+              </div>
+
+            <div class="wrap-skill"> 
+
+              <div class="skil-langauge">C++</div>
+            <div class="progressbar">
+                <div></div>
+              </div>
+           </div>
+           <div class="wrap-skill">
+              <div class="skil-langauge">Web developer</div>
+              <div class="progressbar">
+                  <div></div>
+                </div>
+                </div>
+
+        </div>
+        
+        <div class="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+            <ul>
+                <li> <label> python developer</li>
+                <li><label>Full Stack developer </label></li>
+                <li><label>Java Devloper </label></li>
+                <li><label>C++ Developer </label></li>
+                
+            </ul>
+            </div>
+
+        </div>
+   
+
+    </section> 
+    <main id="Services">
+        <h2>services provider </h2>
+       <section class="services-provider" >
+       
+           <div class="services"> 
+            <i class="fa fa-laptop-code" style="font-size:100px;color:#8670ab;"></i>
+            <p>responsive web site</p>
+         </div>
+           <div class="services"> 
+            <i class="fa fa-database" style="font-size:100px;color:#8670ab;"></i>
+            <p>analysis and design database</p>   
+        
+          </div>
+           <div class="services"> 
+
+            <i class="fa fa-laptop" style="font-size:100px;color:#8670ab;"></i>
+            <p>desktop app</p>
+
+           </div>
+           <div class="services">
+            <i class="fa fa-mobile-alt" style="font-size:100px;color:#8670ab;"></i>
+            <p>mobile app</p>
+
+
+           </div>  
+
+
+       </section>
+      <section class="previous-work">
+        <h2>prevous work</h2>
+        <div class="prevous-work">
+            
+            <div class="work">
+                <div> <img src="face.jpg" class="image-work" alt="face detection images"></div>
+                <h3>
+                    face detection
+                </h3>
+                 <p>project can detect criminal face from camera by python</p> 
+            </div>
+
+            <div class="work">
+                <div> <img src="face.jpg" class="image-work" alt="face detection images"></div>
+                <h3>
+                    bank system
+                </h3>
+                 <p>Project Transfers and Deposit System by java</p> 
+            </div>
+
+            <div class="work">
+                <div> <img src="face.jpg" class="image-work" alt="face detection images"></div>
+                <h3>
+                    Human rights website
+                </h3>
+                 <p>A website for recording and documenting human rights violations</p> 
+            </div>
+            
+
+            <div class="work">
+                <div><img src="face.jpg" class="image-work" alt="face detection images"></div>
+                <h3>
+                    restaurant system
+                </h3>
+                 <p>A system that displays food and drinks using Android Java</p> 
+            </div>
+
+
+        </div>
+
+
+      </section> 
+
+    </main>
+  <section id="Contact">
+      <div class="form-contact">
+        <div class="main-block">
+           
+            <form>
+              <h1>Contact Us</h1>
+              <div class="info">
+                <input id="name" class="fname" type="text" name="name" placeholder="Full name">
+                <input type="text" id="email" name="name" placeholder="Email">
+                
+              
+                <textarea id="message" rows="4" placeholder="Message"></textarea>
+              </div>
+              <input class="send-btn" value="send" type="button" onclick="validation();" >
+            </form>
+          </div>
+      </div>
+  </section>
+
+  <footer>
+    <div class="social-media">
+        <div>  <i class="fab  fa-facebook-f" style="font-size:30px;color:#8670ab;"></i> </div>
+        <div>  <i class="	fab  fa-twitter" style="font-size:30px;color:#8670ab;"></i> </div>
+        <div>  <i class="fab  fa-google" style="font-size:30px;color:#8670ab;"></i></div>
+    </div>
+    <p>Author: Osama Alwafy<br>
+    
+  </footer>
+
+
+  
+   
+
+<script src="home.js"></script>    
+</body>
+</html>
